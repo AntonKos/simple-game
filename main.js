@@ -1,6 +1,5 @@
 const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
-const highScoreBoard = document.querySelector('.highScore')
 canvas.width = 600
 canvas.height = 600
 let arrayOfIndexes = []
@@ -11,7 +10,6 @@ let aY
 let score = 0
 
 let highScore = localStorage.getItem('game1HighScore') || 0
-highScoreBoard.textContent = 'HIGH SCORE: ' + highScore
     //let counter = 0
 let counterBullets = 0
 let n = 9
@@ -51,7 +49,6 @@ function checkHighScore() {
     if (score > localStorage.getItem('game1HighScore')) {
         localStorage.setItem('game1HighScore', score)
         highScore = score
-        highScoreBoard.textContent = 'HIGH SCORE: ' + highScore
     }
 }
 

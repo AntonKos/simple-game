@@ -34,9 +34,10 @@ button {
 }
 
 .highScore {
+    transform: translate(-50%, -50%);
     position: absolute;
-    bottom: 750px;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     color: aliceblue;
 }
 
